@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="742.0" styleClass="bkgroundimage" stylesheets="@../style/chatscr.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="92.0" layoutY="89.0" prefHeight="508.0" prefWidth="254.0" styleClass="signin">
+         <content>
+            <VBox id="anchor" fx:id="vbox" prefHeight="504.0" prefWidth="254.0" styleClass="bkgroundimage" stylesheets="@../../lab32.css">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="254.0">
+                     <children>
+                        <TextField fx:id="tex_f2" prefHeight="36.0" prefWidth="169.0" promptText="Search..." />
+                        <ImageView fx:id="image4" fitHeight="38.0" fitWidth="55.0">
+                           <image>
+                              <Image url="@../resources/search_iconV4_1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <TabPane fx:id="t3" prefHeight="453.0" prefWidth="254.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab fx:id="t1" text="Friends">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView fx:id="ListFriends" prefHeight="422.0" prefWidth="240.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab fx:id="t2" text="Request">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="286.0" prefWidth="178.0">
+                                 <children>
+                                    <ListView fx:id="ListRequest" layoutX="-1.0" layoutY="-2.0" prefHeight="424.0" prefWidth="242.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab fx:id="Group" text="Group">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView fx:id="group" prefHeight="422.0" prefWidth="240.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="361.0" layoutY="87.0" prefHeight="413.0" prefWidth="369.0">
+         <content>
+            <TabPane fx:id="chattabpane" prefHeight="407.0" prefWidth="365.0" tabClosingPolicy="UNAVAILABLE" />
+         </content>
+      </ScrollPane>
+      <TextField id="text_f" fx:id="tex_f" layoutX="362.0" layoutY="542.0" prefHeight="46.0" prefWidth="298.0" promptText="Type Something To Send" />
+      <Button id="signin" fx:id="send" layoutX="668.0" layoutY="546.0" mnemonicParsing="false" onAction="#getMsg" styleClass="signin" stylesheets="@../style/chatscr.css" text="Send">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="image3" fitHeight="59.0" fitWidth="55.0" layoutX="23.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/req.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="39.0" prefHeight="46.0" prefWidth="185.0" text="Friends List" textFill="#fcfcfc">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image1" fitHeight="114.0" fitWidth="125.0" layoutX="-7.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/user1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="uu" layoutX="14.0" layoutY="18.0" prefHeight="17.0" prefWidth="123.0" textFill="#eee5e5" />
+      <Circle fx:id="c" fill="#1fff52" layoutX="158.0" layoutY="27.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+      <ComboBox fx:id="ss" layoutX="172.0" layoutY="14.0" onAction="#mm" prefHeight="25.0" prefWidth="95.0" promptText="Status" />
+      <ComboBox fx:id="comboBoxSize" layoutX="449.0" layoutY="507.0" onAction="#chooseFontSize" prefHeight="25.0" prefWidth="55.0" promptText="10" />
+      <ComboBox fx:id="comboboxfont" layoutX="519.0" layoutY="507.0" onAction="#chooseFontFamily" prefHeight="25.0" prefWidth="81.0" promptText="Fleftex" />
+      <ComboBox fx:id="comboBoxColor" layoutX="610.0" layoutY="507.0" onAction="#chooseColor" prefHeight="25.0" prefWidth="70.0" />
+      <Button fx:id="saveChat" layoutX="689.0" layoutY="507.0" mnemonicParsing="false" onAction="#saveXmlBttn" text="Save" />
+   </children>
+</AnchorPane>

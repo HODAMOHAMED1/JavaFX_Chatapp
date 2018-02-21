@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="481.0" styleClass="bkgroundimage" stylesheets="@../style/lab32.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EntryController">
+   <children>
+      <Label alignment="CENTER" layoutX="106.0" layoutY="50.0" prefHeight="46.0" prefWidth="300.0" styleClass="textcolor" stylesheets="@../style/lab32.css" text="Enter IP Address to Join ichat" textAlignment="CENTER" textFill="#ebdede">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enterIP" layoutX="86.0" layoutY="108.0" prefHeight="46.0" prefWidth="345.0" promptText="Enter IP Address" />
+      <Button fx:id="subIP" layoutX="339.0" layoutY="169.0" mnemonicParsing="false" onAction="#checkip" prefHeight="46.0" prefWidth="91.0" styleClass="signin" stylesheets="@../style/lab32.css" text="Submit" />
+   </children>
+</Pane>

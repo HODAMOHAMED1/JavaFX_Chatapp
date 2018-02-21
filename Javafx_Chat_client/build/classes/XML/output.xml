@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='message.xsl'?>
+<Message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="message.xsd">
+    <Mymessage>
+        <from>Hoda</from>
+        <color>green</color>
+        <size>10</size>
+        <family>Fleftex</family>
+        <body>hjkkjnd</body>
+    </Mymessage>
+    <Mymessage>
+        <from>Ahmed.hesham</from>
+        <color>green</color>
+        <size>28</size>
+        <family>Arial</family>
+        <body>izayk ya hoda </body>
+    </Mymessage>
+    <Mymessage>
+        <from>Hoda</from>
+        <color>blue</color>
+        <size>22</size>
+        <family>Courier New</family>
+        <body>ezyak ya a7md</body>
+    </Mymessage>
+    <Mymessage>
+        <from>Ahmed.hesham</from>
+        <color>black</color>
+        <size>28</size>
+        <family>Arial</family>
+        <body>2na elhamdlelah bslm il project </body>
+    </Mymessage>
+</Message>

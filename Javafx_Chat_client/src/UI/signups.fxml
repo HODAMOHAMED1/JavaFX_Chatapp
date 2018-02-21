@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="bkgroundimage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-image: F:\ITI\java project\Chat\Chat\chat\Javafx_Chat\src\resources\1.png;" styleClass="bkgroundimage" stylesheets="@../style/lab32.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField id="email" fx:id="email" layoutX="128.0" layoutY="189.0" prefHeight="30.0" prefWidth="175.0" promptText="Email.." />
+      <TextField id="user_name" fx:id="user_name" layoutX="128.0" layoutY="125.0" prefHeight="30.0" prefWidth="175.0" promptText="Username..." />
+      <PasswordField id="password" fx:id="password" layoutX="128.0" layoutY="242.0" prefHeight="30.0" prefWidth="175.0" promptText="Password.." />
+      <PasswordField id="con_password" fx:id="con_password" layoutX="128.0" layoutY="299.0" prefHeight="30.0" prefWidth="175.0" promptText="Confirm Password..." />
+      <ChoiceBox id="country" fx:id="country" layoutX="128.0" layoutY="362.0" prefHeight="30.0" prefWidth="175.0" />
+      <Button id="register" fx:id="register" layoutX="91.0" layoutY="545.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="249.0" text="Register" textFill="#242019" />
+      <ImageView fitHeight="114.0" fitWidth="82.0" layoutX="72.0" layoutY="200.0">
+         <image>
+            <Image url="@../resources/lock%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="82.0" layoutX="62.0" layoutY="105.0">
+         <image>
+            <Image url="@../resources/user1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="149.0" layoutX="29.0" layoutY="313.0">
+         <image>
+            <Image url="@../resources/contry%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="129.0" layoutX="27.0" layoutY="390.0">
+         <image>
+            <Image url="@../resources/age%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="75.0" layoutX="76.0" layoutY="169.0">
+         <image>
+            <Image url="@../resources/email%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="82.0" layoutX="73.0" layoutY="268.0">
+         <image>
+            <Image url="@../resources/lock%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="98.0" layoutX="103.0" layoutY="-13.0">
+         <image>
+            <Image url="@../resources/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="174.0" layoutY="30.0" prefHeight="41.0" prefWidth="105.0" text="Chat" textFill="#7d5613">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <TextField id="email" fx:id="age" layoutX="125.0" layoutY="425.0" prefHeight="30.0" prefWidth="175.0" promptText="Age..." />
+      <ChoiceBox id="country" fx:id="gender" layoutX="128.0" layoutY="482.0" prefHeight="30.0" prefWidth="175.0" />
+      <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="84.0" layoutY="482.0">
+         <image>
+            <Image url="@../resources/Gender.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

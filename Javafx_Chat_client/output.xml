@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='message.xsl'?>
+<Message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="message.xsd">
+    <Mymessage>
+        <from>ahmed22</from>
+        <color>green</color>
+        <size>10</size>
+        <family>Fleftex</family>
+        <body> .nfasdajs</body>
+    </Mymessage>
+    <Mymessage>
+        <from>ahmed22</from>
+        <color>green</color>
+        <size>10</size>
+        <family>Fleftex</family>
+        <body>adnbs</body>
+    </Mymessage>
+</Message>
